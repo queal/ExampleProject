@@ -131,7 +131,7 @@ public class ExampleController {
 			for (WebSocketSession webSocketSession : EchoTestWebSocket.webSession.values()) {
 				if (webSocketSession.isOpen()) {
 					webSocketSession
-							.sendMessage(new TextMessage("ÄãºÃ°¡, ÕâÖ¤Ã÷ÏûÏ¢ÊÇËæ»úµÄ_" + RandomStringUtils.randomAlphanumeric(16)));
+							.sendMessage(new TextMessage("ï¿½ï¿½Ã°ï¿½, ï¿½ï¿½Ö¤ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_" + RandomStringUtils.randomAlphanumeric(16)));
 				}
 			}
 		} catch (IOException e) {

@@ -24,10 +24,17 @@ public class JSONController {
 		exampleData.setMsg("success");
 
 		String jsonData = JSON.toJSONString(exampleData);
-		JSONExampleData exampleData1 = JSON.parseObject(jsonData, JSONExampleData.class);
+		JSONExampleData exampleData1 = JSON.parseObject(jsonData,
+				JSONExampleData.class);
 		System.out.println(request.getSession().getId() + "," + exampleData1);
 
 		return jsonData;
 	}
 
+	/*
+	 * 
+	 * {retCode: -1[0], retData: {pojo}}
+	 * 
+	 * {pojoJson}
+	 */
 }

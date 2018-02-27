@@ -59,9 +59,9 @@ public class PersonServiceImpl implements PersonService {
 		p.setAutoId(16);
 		p.setName(record.getName() + "_" + RandomStringUtils.randomNumeric(3));
 		personMapper.updateByPrimaryKeySelective(p);
-		
+
 		int ret = personMapper.insertExist(record);
-		if(ret > 0) {
+		if (ret > 0) {
 			System.out.println("插入成功");
 		} else {
 			System.out.println("插入失败");

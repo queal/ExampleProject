@@ -1,5 +1,9 @@
 package com.example.controller.page.pojo;
 
+import java.util.concurrent.Executors;
+
+import org.apache.catalina.Executor;
+
 import com.example.pojo.QueryCondition;
 
 public class PersonQueryCondition extends QueryCondition {
@@ -23,4 +27,12 @@ public class PersonQueryCondition extends QueryCondition {
 		this.age = age;
 	}
 
+	public static void main(String[] args) {
+		new Thread(){
+			public void run() {
+				// TODO:
+			};
+		}.start();
+		
+	}
 }
