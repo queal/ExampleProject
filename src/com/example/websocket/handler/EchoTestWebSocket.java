@@ -32,4 +32,5 @@ public class EchoTestWebSocket extends TextWebSocketHandler {
 
 		session.sendMessage(new TextMessage(message.getPayload().toString()));
 	}
+	
 }

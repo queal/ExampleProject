@@ -41,4 +41,15 @@ public class AndroidAESUtils {
 		}
 		return null;
 	}
+	
+	public static void main(String[] args) {
+		String key = "1234567890123456";
+		String content = "abc";
+		String enCodeCotent;
+		
+		enCodeCotent = encrypt(key, content);
+		System.out.println(enCodeCotent);
+		
+		System.out.println(decrypt(key, "9Hnvri1B0jIn9h5nX87ZXA=="));
+	}
 }

@@ -34,7 +34,7 @@ public class PersonServiceImpl implements PersonService {
 			params.put("money", useMoney);
 			personMapper.updateMoney(params);
 		}
-
+		
 		return balanceMoney.toString();
 	}
 

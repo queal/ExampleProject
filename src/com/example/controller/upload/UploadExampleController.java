@@ -27,6 +27,7 @@ public class UploadExampleController {
 		// spring 入参的值 要和form的name匹配
 		// 否则需要用 @RequestParam(form-name) 来转译, 但一般原则上不转译, 为了更快
 		try {
+			
 			// 上传七牛文件服务器
 			String fileName = RandomStringUtils.randomAlphanumeric(16);
 			if (QiNiuUtils.upload(fileName, file.getBytes(), QiNiuUtils.BUCKET_NAME_MER_INFO)) {

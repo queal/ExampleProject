@@ -14,7 +14,7 @@ import com.example.controller.upload.UploadExampleController;
 @Controller
 public class LogController {
 	private static final Log logger = LogFactory.getLog(UploadExampleController.class);
-
+	
 	@ResponseBody
 	@RequestMapping(value = "/logtest")
 	public String updateMoney(HttpServletRequest request, Model model) {
